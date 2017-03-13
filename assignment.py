@@ -161,8 +161,8 @@ reduced_data = pd.DataFrame(reduced_data, columns=['Dimension 1', 'Dimension 2']
 
 # 观察
 # 展示经过两个维度的PCA转换之后的样本log-data
-# 这里的结果与一个使用六个维度的PCA转换相比较时，前两维的数值是保持不变的。
 # display(pd.DataFrame(np.round(pca_samples, 4), columns = ['Dimension 1', 'Dimension 2']))
+# 这里的结果与一个使用六个维度的PCA转换相比较时，前两维的数值是保持不变的。
 
 # 可视化一个双标图（Biplot）
 # 双标图是一个散点图，每个数据点的位置由它所在主成分的分数确定。坐标系是主成分（这里是Dimension 1 和 Dimension 2）。
@@ -261,7 +261,7 @@ print("不使用cluster特征的得分", clf.score(X_test, y_test))
 
 # 可视化内在的分布
 # 根据‘Channel‘数据显示聚类的结果
-vs.channel_results(reduced_data, outliers, pca_samples)
+# vs.channel_results(reduced_data, outliers, pca_samples)
 
 # 问题 12
 print()
